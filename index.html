@@ -116,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="book-now" class="btn-style">Book Now</button>
         </div>
     </main>
 
@@ -171,6 +171,11 @@
             let valueOFInputInNumber = parseInt(valueOFInput.value);
             return valueOFInputInNumber;
         }
+
+        //extra part
+        document.getElementById("book-now").addEventListener("click", function(){
+            alert("You Have Successfully Booked your Tickets. Thanks for your Pursues")
+        })
     </script>
     <!-- javascript end -->
 </body>
