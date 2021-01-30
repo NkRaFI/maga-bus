@@ -176,8 +176,11 @@
         document.getElementById("book-now").addEventListener("click", function () {
             let firstInput = document.getElementById("first-class-input").value;
             let secondInput = document.getElementById("economy-input").value;
-            if (firstInput > 0 && secondInput > 0) {
+            if (firstInput > 0 || secondInput > 0) {
                 alert("You Have Successfully Booked your Tickets. Thanks for your Pursues")
+            }
+            else{
+                alert("You Didn't Pursues any Tickets!!!");
             }
         })
     </script>
