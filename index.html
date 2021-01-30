@@ -138,10 +138,10 @@
             document.getElementById(id).value = newInput;
 
             let price = 0;
-            if(id == "first-class-input"){
+            if (id == "first-class-input") {
                 price = newInput * 150;
             }
-            if(id == "economy-input"){
+            if (id == "economy-input") {
                 price = newInput * 100;
             }
 
@@ -150,7 +150,7 @@
 
 
         // total price calculation function
-        function totalPriceCalculation(){
+        function totalPriceCalculation() {
             let firstClassInputInNumber = getInputValue("first-class-input")
             let economyInputInNumber = getInputValue("economy-input")
 
@@ -166,17 +166,17 @@
 
 
         // function for get input filed values also dry code
-        function getInputValue(id){
+        function getInputValue(id) {
             let valueOFInput = document.getElementById(id);
             let valueOFInputInNumber = parseInt(valueOFInput.value);
             return valueOFInputInNumber;
         }
 
         //extra part
-        document.getElementById("book-now").addEventListener("click", function(){
+        document.getElementById("book-now").addEventListener("click", function () {
             let firstInput = document.getElementById("first-class-input").value;
             let secondInput = document.getElementById("economy-input").value;
-            if(firstInput > 0 && secondInput > 0){
+            if (firstInput > 0 && secondInput > 0) {
                 alert("You Have Successfully Booked your Tickets. Thanks for your Pursues")
             }
         })
